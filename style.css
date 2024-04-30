@@ -183,7 +183,7 @@ html {
 
 /* PAGE BLACK CLOVER */
 
-.detail-anime .cta-back {
+/* .detail-anime .cta-back {
     position: absolute;
     top: 7rem;
     font-size: 4rem;
@@ -222,11 +222,11 @@ html {
 .backsound {
     display: flex;
     align-content: center;
-}
+} */
 
 .body-detail-anime{
     position: relative;
-    top: 5rem;
+    top: 4rem;
     width: 100%;
     height: 90vh;
     background: rgb(45, 45, 45);
@@ -236,7 +236,7 @@ html {
     justify-content: center;
 }
 
-header {
+.body-detail-anime header {
     position: relative;
     width: 80%;
     height: 90%;
@@ -276,7 +276,7 @@ header video{
 header .content{
     position: relative;
     color: white;
-    margin-top: 95px;
+    margin-top: 4.4rem;
     padding-left: 30px;
 }
 
@@ -284,11 +284,10 @@ header .content h1{
     font-size: 50px;
 }
 header .content p{
-    font-size: 12px;
-    width: 390px;
+    font-size: 13px;
+    width: 360px;
     word-spacing: 1.5px;
     letter-spacing: 1px;
-    text-align: justify;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -317,31 +316,42 @@ header .content p{
 .button .btn:active {
     transform: translate(0em, 0.2em);
 }
-  
 footer{
     position: absolute;
-    bottom: 0;
+    bottom: -3rem;
+    padding-bottom: 2rem;
     width: 100%;
     color: white;
     text-align: center;
-
+    
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 900px){
     header{
         margin-top: 4rem;
         width: 90%;
         height: 70%;
     }
-
+    
     header video {
-        position: absolute;
         width: 100%;
     }
-
+    
     header .content{
-        width: 70%;
+        padding-top: 2rem;
+        width: 60%;
+
     }
+    header .content h1{
+        font-size: 37px;
+    }
+
+    footer{
+        bottom: -3rem;
+        padding-bottom: 1rem;
+
+    }
+
 
 }
 @media screen and (max-width: 690px){
@@ -365,7 +375,7 @@ footer{
     }
 
     header{
-        margin-top: 7rem;
+        margin-top: 5rem;
         width: 90%;
         height: 70%;
     }
@@ -373,6 +383,11 @@ footer{
     header video {
         position: absolute;
         width: 100%;
+    }
+
+    header .content{
+        padding-top: 4rem;
+        width: 63%;
     }
 
     header .content h1{
@@ -383,7 +398,7 @@ footer{
     header .content p{
         width: 60%;
         font-size: 9px;
-        opacity: .8;
+        opacity: .9;
     }
     header .content span{
         font-size: 9px;
