@@ -1,89 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Pertama</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
-
-</head>
-<body>
-<!-- navigation section start -->
+  </head>
+  <body>
+    <!-- navigation section start -->
     <nav class="navbar-nav">
-        <a href="#" class="logo">
-            Kami<span>Nime</span>.
-        </a>
-        <div class="navbar">
-            <a href="#home">Beranda</a>
-            <a href="#anime-list">Anime List</a>
-            <a href="#kategori">Kategori</a>
-            <a href="#komunitas">Komunitas</a>
-        </div>
+      <a href="#" class="logo"> Kami<span>Nime</span>. </a>
+      <div class="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#anime-list">Anime List</a>
+        <a href="#category-anime">Kategori</a>
+        <a href="#komunitas">Komunitas</a>
+        <a href="#" id="search-btn"><i data-feather="search"></i></a>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
     </nav>
 
-<!-- navigation section end -->
+    <!-- navigation section end -->
 
-<!-- Hero Section start -->
+    <!-- Hero Section start -->
     <section class="hero" id="home">
-        <main class="content">
-            <h1>
-                Streaming anime dengan kualitas tinggi hanya di Kami<span>Nime</span>.
-            </h1>
-            <a href="#anime-list" class="cta">Stream Now</a>
-        </main>
+      <main class="content">
+        <h1>Streaming anime dengan kualitas tinggi hanya di Kami<span>Nime</span>.</h1>
+        <a href="#anime-list" class="cta">Stream Now</a>
+      </main>
     </section>
 
-<!-- Anime list Section start -->
+    <!-- Hero Section end -->
+
+    <!-- Anime list Section start -->
 
     <section class="anime-list" id="anime-list">
-        <div class="anime">
-            <h2 class="most-popular">MOST<br>POPULAR</h2>
+      <div class="anime">
+        <h2 class="most-popular">MOST<br />POPULAR</h2>
+      </div>
+      <div class="card-container" id="card-container">
+        <div class="card" id="card">
+          <img src="assets/black-clover.jpg" alt="black-clover" />
+          <h3>Black Clover</h3>
+          <a href="detail-anime-bl.html">Watch Now</a>
         </div>
-        <div class="card-container" id="card-container">
-            <div class="card" id="card">
-                <img src="assets/black-clover.jpg" alt="black-clover">
-                <h3>Black Clover</h3>
-                <a href="detail-anime-bl.html">Watch Now</a>
-            </div>
-            <div class="card" id="card">
-                <img src="assets/dr-stone.jpg" alt="Dr. Stone">
-                <h3>Dr. Stone</h3>
-                <a href="">Watch Now</a>
-            </div>
-            <div class="card" id="card">
-                <img src="assets/one-piece.jpg" alt="One Piece">
-                <h3>One Piece</h3>
-                <a href="">Watch Now</a>
-            </div>
-            <div class="card" id="card">
-                <img src="assets/kimetsu no yaiba.jpg" alt="Kimetsu No Yaiba">
-                <h3>Kimetsu No Yaiba</h3>
-                <a href="detail-anime-kmy.html">Watch Now</a>
-            </div>
-            <div class="card" id="card">
-                <img src="assets/spy x family.jpg" alt="Spy X Family">
-                <h3>Spy x Family</h3>
-                <a href="">Watch Now</a>
-            </div>
+        <div class="card" id="card">
+          <img src="assets/dr-stone.jpg" alt="Dr. Stone" />
+          <h3>Dr. Stone</h3>
+          <a href="">Watch Now</a>
         </div>
-        <div class="page-number" id="page-number">
-            <h4>1</h4>
-            <h4>2</h4>
-            <h4>3</h4>
-            <h4>...</h4>
+        <div class="card" id="card">
+          <img src="assets/attack on titan.jpg" alt="One Piece" />
+          <h3>Attack On Titan</h3>
+          <a href="detail-anime-aot.html">Watch Now</a>
+        </div>
+        <div class="card" id="card">
+          <img src="assets/kimetsu no yaiba.jpg" alt="Kimetsu No Yaiba" />
+          <h3>Kimetsu No Yaiba</h3>
+          <a href="detail-anime-kmy.html">Watch Now</a>
+        </div>
+        <div class="card" id="card">
+          <img src="assets/spy x family.jpg" alt="Spy X Family" />
+          <h3>Spy x Family</h3>
+          <a href="">Watch Now</a>
+        </div>
+      </div>
+      <div class="page-number" id="page-number">
+        <h4>1</h4>
+        <h4>2</h4>
+        <h4>3</h4>
+        <h4>...</h4>
+      </div>
+    </section>
+    <!-- Anime list Section end -->
+
+    <!-- Kategory start -->
+
+    <section class="category-anime" id="category-anime">
+      <h3 class="title-category">CATEGORY</h3>
+      <div class="container-category">
+        <div class="anime-action">
+          <h3 class="category">Action</h3>
+          <div class="action-card">
+            <div class="card" id="card">
+              <img src="assets/black-clover.jpg" alt="black-clover" />
+              <h3>Black Clover</h3>
+              <a href="detail-anime-bl.html">Watch Now</a>
+            </div>
+            <div class="card" id="card">
+              <img src="assets/kimetsu no yaiba.jpg" alt="Kimetsu No Yaiba" />
+              <h3>Kimetsu No Yaiba</h3>
+              <a href="detail-anime-kmy.html">Watch Now</a>
+            </div>
+            <div class="card" id="card">
+              <img src="assets/attack on titan.jpg" alt="One Piece" />
+              <h3>Attack On Titan</h3>
+              <a href="detail-anime-aot.html">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="anime-comedy">
+          <h3 class="category">Comedy</h3>
+          <div class="comedy-card">
+            <div class="card" id="card">
+              <img src="assets/black-clover.jpg" alt="black-clover" />
+              <h3>Black Clover</h3>
+              <a href="detail-anime-bl.html">Watch Now</a>
+            </div>
+            <div class="card" id="card">
+              <img src="assets/spy x family.jpg" alt="Spy X Family" />
+              <h3>Spy x Family</h3>
+              <a href="">Watch Now</a>
+            </div>
+            <div class="card" id="card">
+              <img src="assets/dr-stone.jpg" alt="Dr. Stone" />
+              <h3>Dr. Stone</h3>
+              <a href="">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="anime-romance"></div>
+      </div>
+    </section>
+
+    <!-- Kategory end -->
+
+    <!-- Footer start -->
+    <section>
+      <div class="footer">
+        <a href="#" class="logo"> Kami<span>Nime</span>. </a>
+        <div class="footer-item">
+            <i data-feather="facebook"></i>
+            <i data-feather="linkedin"></i>
+            <i data-feather="twitter"></i>
+        </div>
+        <div class="footer-section">
+          <a href="#home">Beranda</a>
+          <a href="#anime-list">Anime List</a>
+          <a href="#category-anime">Kategori</a>
+          <a href="#komunitas">Komunitas</a>
+        </div>
+        
+      </div>
+      <div class="copyright">
+            Copyright &copy; 2024 by KamiNime
         </div>
     </section>
-<!-- Anime list Section end -->
+    <!-- Footer end -->
 
-<!-- Hero Section end -->
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- Feather Icon -->
 
-<!-- Feather Icon -->
-<script>
-    feather.replace();
-  </script>
-<!-- Feather Icon -->
-
-</body>
+    <!-- my script -->
+    <script src="main.js"></script>
+    <!-- my script -->
+  </body>
 </html>
